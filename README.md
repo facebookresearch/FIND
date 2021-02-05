@@ -1,6 +1,6 @@
 # Description
 
-This repository contains code for reproducing the main experiments of _What they do when in doubt: a study of inductive biases in seq2seq learners_, Eugene Kharitonov<sup>+</sup> and Rahma Chaabouni<sup>+</sup> [[arxiv]](https://arxiv.org/abs/2006.14953).
+This repository contains code for reproducing the main experiments of _What they do when in doubt: a study of inductive biases in seq2seq learners_, Eugene Kharitonov<sup>+</sup> and Rahma Chaabouni<sup>+</sup>. ICLR 2021. [[openreview]](https://openreview.net/forum?id=YmA86Zo-P_t) [[arxiv]](https://arxiv.org/abs/2006.14953).
 
 Armed with the poverty of stimulus principle, we examine inductive biases of standard seq2seq learners. Most notably, we find that LSTM-based learners have strong inductive biases towards arithmetic operations, such as counting, addition, and multiplication by a constant. Similarly, Transformer-based learners are biased for hierarchical reasoning. 
 
@@ -17,6 +17,7 @@ Before running the code, you need to (1) install the required packages, and (2) 
 - [Experiments with FPA](#experiments-with-fpa)
 - [Experiments with description length](#experiments-with-description-length)
 - [Reproducibility note](#reproducibility-note)
+- [How to cite our work](#how-to-cite-our-work)
 
 
 # Installing requirements
@@ -274,8 +275,6 @@ python local_grid.py --sweep=hyperparams/hierar-or-linear/transformer_small.json
 
 #### Reproducibility note
 * when preparing this code and data, we have changed the order of the examples in the training sets, which can result in non-significant changes w.r.t. the numbers reported in the text, 
-* In Table 1d, we normalized the description length by dividing by 4 (size of the block); however this code does not apply such normalization.
-We have verified that neither of these changes affect the reported prefences of the learners or conclusions of the paper.
 
 That's it - thanks for reading!
 
@@ -283,3 +282,15 @@ That's it - thanks for reading!
 # License
 FIND is CC-BY-NC licensed, as found in the LICENSE file.
 
+# How to cite our work
+
+```
+@inproceedings{
+kharitonov2021what,
+title={What they do when in doubt: a study of inductive biases in seq2seq learners},
+author={Eugene Kharitonov and Rahma Chaabouni},
+booktitle={International Conference on Learning Representations},
+year={2021},
+url={https://openreview.net/forum?id=YmA86Zo-P_t}
+}
+```
