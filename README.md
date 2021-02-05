@@ -129,6 +129,7 @@ A high-level outline of the directories is the following:
  - tasks/ # contains data for Count-or-Memorization, Add-or-Multiply, Hierarchical-or-Linear
      add-or-mul/
      hierar-or-linear/
+     comp-or-mem/
      count-or-mem/ # all related for Count-or-Memorization
         10/ # different instances of the task, depending on the example length
         20/
